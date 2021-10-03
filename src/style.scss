@@ -1,0 +1,63 @@
+$backgroundColor: #EEEEEE;
+$primaryColor: #222831;
+$headColor: #00adb5;
+$borderColor: #393e46;
+$backgroundFound: #DB5461;
+
+body {
+  width: 100%;
+  background-color: $backgroundColor;
+  color: $primaryColor;
+}
+
+h1 {
+  text-align: center;
+  color: $headColor;
+}
+
+.grid {
+  width: 900px;
+  border: 2px solid $borderColor;
+  border-spacing: 0;
+  border-radius: 5px;
+  margin: 10px auto;
+  text-align: left;
+  
+  &__cell {
+    border: 1px solid $borderColor;
+    padding: 5px;
+  }
+
+  &__head {
+    background-color: $headColor;
+    a {
+      color: $backgroundColor;
+    }
+  }
+
+  &__id {
+    width: 15%;
+    text-align: center;
+  }
+
+  &__author {
+    width: 20%;
+  }
+
+  &__quote {
+    width: 50%;
+  }
+
+  &__tags {
+    width: 15%;
+  }
+
+  &__input {
+    display: block;
+    margin-top: 5px;
+  }
+
+  &__found {
+    background-color: $backgroundFound;
+  }
+}
