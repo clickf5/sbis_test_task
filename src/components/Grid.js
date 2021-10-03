@@ -142,7 +142,10 @@ class Grid extends HTMLElement {
     table.appendChild(tbody);
 
     // Обновляем
-    this.innerHTML = '';
+    // По хорошему нужно поудалять все обработчики событий, но я этого не делал
+    while (this.firstChild) {
+      this.removeChild(this.firstChild);
+    }
     this.appendChild(table);
 
     if (search.by) {
